@@ -14,7 +14,7 @@ const ImageGallery = ({ images, setSelectedImage }) => {
           className={css.photoItem}
           onClick={() => setSelectedImage(image)}
         >
-          <ImageCard src={image.urls.small} alt={image.alt_description} />
+          <ImageCard image={image} src={image.urls.small} alt={image.alt_description} />
         </li>
       ))}
     </ul>
